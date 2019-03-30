@@ -130,34 +130,48 @@ Markdown是一种纯文本格式的标记语言。通过简单的语法使普通
 
 ## 五、图片
 
-语法： ![这是显示图片下面的字，相当于对图片的解释](图片地址 "这是图片的标题，当鼠标移动到图片上时显示的内容。title可加可不加")
+语法： 
+
+```
+![这是显示图片下面的字，相当于对图片的解释](图片地址 "这是图片的标题，当鼠标移动到图片上时显示的内容。title可加可不加")
+```
 
 示例：
 
 ![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/
 u=702257389,1274025419&fm=27&gp=0.jpg "区块链")
 
+
+
 ## 六、超链接
 
-语法： [超链接名](超链接地址 "超链接title") title可加可不加
+语法： 
+
+```
+[超链接名](超链接地址 "超链接title") title可加可不加
+```
 
 示例：
 
-> [百度](https://www.baidu.com/)
-> [github](https://www.github.com)
+ [百度](https://www.baidu.com/)
 
-效果如下：
+ [github](https://www.github.com)
 
-[百度](https://www.baidu.com/)
-[github](https://www.github.com)
 
-注：Markdown本身语法不支持链接在新页面中打开，可以用HTML语言的a标签在新的页面中打开。
 
-> <a href="超链接地址" target="_blank">超链接名</a>
+    注：Markdown本身语法不支持链接在新页面中打开，可以用HTML语言的a标签在新的页面中打开。
+
+语法：
+
+```
+<a href="超链接地址" target="_blank">超链接名</a>
+```
 
 示例：
 
 <a href="https://www.baidu.com" target="_blank">百度</a>
+
+
 
 ## 七、列表
 
