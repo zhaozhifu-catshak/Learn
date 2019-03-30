@@ -324,30 +324,19 @@ console.log(r); //1,2,3
 
 [点击了解流程图详情](https://mermaidjs.github.io/)
 
+语法：
 
-flow
-st=>start: 开始
-op=>operation: My Operation
-cond=>condition: Yes or No?
-e=>end
-st->op->cond
-cond(yes)->e
-cond(no)->op
-&
-
-
-
+```
 graph TD;
     A-->B;
     A-->C;
     B-->D;
     C-->D;
 
+```
+
+示例：
+
+![流程图](https://github.com/knsv/mermaid/blob/master/img/flow.png "流程图")
 
 
-sequence
-Title:连接建立的过程
-客户主机->服务器主机: 连接请求（SYN=1,seq=client_isn） 
-服务器主机->客户主机: 授予连接（SYN=1,seq=client_isn）\n ack=client_isn+1
-客户主机->服务器主机: 确认（SYN=0,seq=client_isn+1）\nack=server_isn+1
-　
