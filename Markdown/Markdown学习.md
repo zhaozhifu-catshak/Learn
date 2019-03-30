@@ -348,3 +348,15 @@ op2=>operation: My Ope
 op3=>operation: My Ope
 
 op1(right)->op2(right)->op3
+
+
+
+
+st=>start: Start
+e=>end
+op=>operation: My Operation
+cond=>condition: Yes or No?
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
