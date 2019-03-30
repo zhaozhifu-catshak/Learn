@@ -138,7 +138,7 @@ Markdown是一种纯文本格式的标记语言。通过简单的语法使普通
 
 示例：
 
-![李念](http://photo.weibo.com/1290193560/wbphotos/large/mid/4344066022321383/pid/4ce6ca98ly1g0k67apz5hj23gg56ou11 "李念")
+![李念](http://wx4.sinaimg.cn/mw690/4ce6ca98ly1g0k67apz5hj23gg56ou11.jpg "李念")
 
 
 
