@@ -322,7 +322,7 @@ console.log(r); //1,2,3
 
 ## 十、流程图
 
-```flow
+flow
 st=>start: 开始
 op=>operation: My Operation
 cond=>condition: Yes or No?
@@ -331,17 +331,16 @@ st->op->cond
 cond(yes)->e
 cond(no)->op
 &
-```
 
 
-```
-mermaid
+
 graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
-  ```
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+
+
 
 sequence
 Title:连接建立的过程
