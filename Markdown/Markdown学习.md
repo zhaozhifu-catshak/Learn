@@ -322,7 +322,7 @@ console.log(r); //1,2,3
 
 ## 十、流程图
 
-[流程图](https://mermaidjs.github.io/)
+[点击了解流程图详情](https://mermaidjs.github.io/)
 
 
 flow
