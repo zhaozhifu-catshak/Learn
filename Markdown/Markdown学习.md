@@ -148,6 +148,10 @@ Markdown是一种纯文本格式的标记语言。通过简单的语法使普通
 
 ```
 [超链接名](超链接地址 "超链接title") title可加可不加
+
+[百度](https://www.baidu.com/)
+
+[github](https://www.github.com)
 ```
 
 示例：
@@ -164,6 +168,8 @@ Markdown是一种纯文本格式的标记语言。通过简单的语法使普通
 
 ```
 <a href="超链接地址" target="_blank">超链接名</a>
+
+<a href="https://www.baidu.com" target="_blank">百度</a>
 ```
 
 示例：
