@@ -331,3 +331,12 @@ st->op->cond
 cond(yes)->e
 cond(no)->op
 &```
+
+
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+  ```
