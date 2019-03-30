@@ -138,8 +138,7 @@ Markdown是一种纯文本格式的标记语言。通过简单的语法使普通
 
 示例：
 
-![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/
-u=702257389,1274025419&fm=27&gp=0.jpg "区块链")
+![李念](http://photo.weibo.com/1290193560/wbphotos/large/mid/4344066022321383/pid/4ce6ca98ly1g0k67apz5hj23gg56ou11 "李念")
 
 
 
