@@ -145,3 +145,112 @@ $ git remote add origin git@github.com:zhaozhifu-catshak/Learn.git
 $ git clone git@github.com:zhaozhifu-catshak/Learn.git
 ```
 
+### 五、创建分支
+
+1. 首先，我们创建read分支，然后切换到read分支：
+
+```
+$ git checkout -b read
+Switched to a new branch 'read'
+```
+
+2. git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：
+
+```
+$ git branch read       //创建read分支
+$ git checkout read     //切换到read分支
+Switched to branch 'read'
+```
+
+3. 使用git branch命令查看当前分支：
+
+```
+$ git branch
+* read
+  master
+```
+4. git branch命令会列出所有分支，当前分支前面会标一个*号。
+
+然后，我们就可以在read分支上正常提交。
+
+5. 使用git merge命令用于合并指定分支到当前分支。
+
+```
+$ git merge read
+Updating d46f35e..b17d20e
+Fast-forward
+ readme.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+注：如果要合并到master主分支，要先切换到master主分支
+```
+
+6. 合并完成后，就可以放心地删除read分支了
+
+```
+$ git branch -d read
+Deleted branch dev (was b17d20e).
+```
+
+7. 删除后，查看branch，就只剩下master分支了：
+
+```
+$ git branch
+* master
+```
+
+8. 用git log --graph命令可以看到分支合并图.
+
+9. 合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。
+    
+```
+$ git merge --no-ff -m "merge with no-ff" read
+
+//-m参数可以把commit描述写进去。
+```
+10. 使用git branch -D file 命令强行删除分支
+11. 推送分支:
+
+```
+$ git push origin read
+```
+
+### 六、创建标签
+
+1. 首先，切换到需要打标签的分支上，使用命令 git tag打标签。
+
+```
+$ git branch
+* read
+  master
+$ git checkout master
+Switched to branch 'master'
+$ git tag v1.0
+//$ git tag v0.9 commit id
+//可以用commit id 给固定版本打标签
+```
+
+2. 用命令git tag查看所有标签.
+
+```
+$ git tag
+//v0.9
+v1.0
+```
+
+3. 命令git tag -a tagname -m "blablabla..."  可以指定标签信息
+   
+```
+$ git tag -a v0.1 -m "version 0.1 released" 1094adb
+```
+4. 使用参数-d删除 ***本地*** 标签
+
+```
+$ git tag -d v0.1
+Deleted tag 'v0.1' (was f15b0dd)
+```
+5. 命令git push origin :refs/tags/tagname 可以删除一个远程标签
+
+6. 命令git push origin <tagname> 可以推送一个本地标签；
+
+命令git push origin --tags可以推送全部未推送过的本地标签；
