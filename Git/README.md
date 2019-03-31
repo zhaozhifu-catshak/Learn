@@ -249,8 +249,13 @@ $ git tag -a v0.1 -m "version 0.1 released" 1094adb
 $ git tag -d v0.1
 Deleted tag 'v0.1' (was f15b0dd)
 ```
+
 5. 命令git push origin :refs/tags/tagname 可以删除一个远程标签
 
-6. 命令git push origin <tagname> 可以推送一个本地标签；
+6. 命令git push origin tagname 可以推送一个本地标签；
 
-命令git push origin --tags可以推送全部未推送过的本地标签；
+7. 命令git push origin --tags可以推送全部未推送过的本地标签；
+   
+
+
+   2019年3月31日下午13：20
