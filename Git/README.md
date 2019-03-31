@@ -256,6 +256,19 @@ Deleted tag 'v0.1' (was f15b0dd)
 
 7. 命令git push origin --tags可以推送全部未推送过的本地标签；
    
+8. 让git显示颜色 
+
+``` 
+$ git config --global color.ui true
+```
+
+
+
+
+
+
+
+
 
 
    2019年3月31日下午13：20
