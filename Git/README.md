@@ -272,3 +272,67 @@ $ git config --global color.ui true
 
 
    - 2019年3月31日下午13：20
+
+
+
+### 七、LFS（Large File Storage）
+
+* git lfs env:
+    Display the Git LFS environment.
+* git lfs checkout:
+    Populate working copy with real content from Git LFS files.
+* git lfs fetch:
+    Download Git LFS files from a remote.
+* git lfs fsck:
+    Check Git LFS files for consistency.
+* git lfs install:
+    Install Git LFS configuration.
+* git lfs lock:
+    Set a file as "locked" on the Git LFS server.
+* git lfs locks:
+    List currently "locked" files from the Git LFS server.
+* git lfs logs:
+    Show errors from the Git LFS command.
+* git lfs ls-files:
+    Show information about Git LFS files in the index and working tree.
+* git lfs migrate:
+    Migrate history to or from Git LFS
+* git lfs prune:
+    Delete old Git LFS files from local storage
+* git lfs pull:
+    Fetch Git LFS changes from the remote & checkout any required working tree
+    files.
+* git lfs push:
+    Push queued large files to the Git LFS endpoint.
+* git lfs status:
+    Show the status of Git LFS files in the working tree.
+* git lfs track:
+    View or add Git LFS paths to Git attributes.
+* git lfs uninstall:
+    Uninstall Git LFS by removing hooks and smudge/clean filter configuration.
+* git lfs unlock:
+    Remove "locked" setting for a file on the Git LFS server.
+* git lfs untrack:
+    Remove Git LFS paths from Git Attributes.
+* git lfs update:
+    Update Git hooks for the current Git repository.
+* git lfs version:
+    Report the version number.
+
+
+
+Git LFS is a system for managing and versioning large files in
+association with a Git repository.  Instead of storing the large files
+within the Git repository as blobs, Git LFS stores special "pointer
+files" in the repository, while storing the actual file contents on a
+Git LFS server.  The contents of the large file are downloaded
+automatically when needed, for example when a Git branch containing
+the large file is checked out.
+
+Git LFS works by using a "smudge" filter to look up the large file
+contents based on the pointer file, and a "clean" filter to create a
+new version of the pointer file when the large file's contents change.
+It also uses a pre-push hook to upload the large file contents to
+the Git LFS server whenever a commit containing a new large file
+version is about to be pushed to the corresponding Git server.
+
