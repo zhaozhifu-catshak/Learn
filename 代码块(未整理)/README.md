@@ -24,9 +24,9 @@
     console.log('Mess数组的值:',Mess);
     var MESS = '';
     for (var i =0; i<Mess.length-1;i++){
-       mess += Mess[i] + '^^'
+       MESS += Mess[i] + '^^'
     };
-    console.log( mess + Mess[Mess.length-1] );
+    console.log( MESS + Mess[Mess.length-1] );
 
 ```
 
