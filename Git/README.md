@@ -278,61 +278,66 @@ $ git config --global color.ui true
 ### 七、LFS（Large File Storage）
 
 * git lfs env:
-    Display the Git LFS environment.
+    显示 Git LFS 系统环境 .
 * git lfs checkout:
     Populate working copy with real content from Git LFS files.
+    使用来自Git LFS文件的真实内容填充工作副本
 * git lfs fetch:
     Download Git LFS files from a remote.
+    从远程下载Git LFS文件
 * git lfs fsck:
     Check Git LFS files for consistency.
+    检查Git LFS文件的一致性
 * git lfs install:
     Install Git LFS configuration.
+    安装Git LFS并配置
 * git lfs lock:
     Set a file as "locked" on the Git LFS server.
+    在Git LFS服务器上将文件设置为“锁定”。
 * git lfs locks:
     List currently "locked" files from the Git LFS server.
+    列出当前从Git LFS服务器“锁定”的文件
 * git lfs logs:
     Show errors from the Git LFS command.
+    显示来自Git LFS命令的错误。
 * git lfs ls-files:
     Show information about Git LFS files in the index and working tree.
+    在索引和工作树中显示关于Git LFS文件的信息
 * git lfs migrate:
     Migrate history to or from Git LFS
+    将历史迁移到或从Git LFS
 * git lfs prune:
     Delete old Git LFS files from local storage
+    从本地存储中删除旧的Git LFS文件
 * git lfs pull:
     Fetch Git LFS changes from the remote & checkout any required working tree
     files.
+    从远程获取Git LFS更改并检出任何所需的工作树文件
 * git lfs push:
     Push queued large files to the Git LFS endpoint.
+    将排队的大文件推送到Git LFS端点
 * git lfs status:
     Show the status of Git LFS files in the working tree.
+    显示工作树中Git LFS文件的状态
 * git lfs track:
     View or add Git LFS paths to Git attributes.
+    查看或向Git属性添加Git LFS路径
 * git lfs uninstall:
     Uninstall Git LFS by removing hooks and smudge/clean filter configuration.
+    通过删除挂钩和涂抹/清除过滤器配置卸载Git LFS
 * git lfs unlock:
     Remove "locked" setting for a file on the Git LFS server.
+    删除Git LFS服务器上文件的“锁定”设置。
 * git lfs untrack:
     Remove Git LFS paths from Git Attributes.
+    从Git属性中删除Git LFS路径
 * git lfs update:
-    Update Git hooks for the current Git repository.
+    更新当前Git存储库的Git hooks.
 * git lfs version:
-    Report the version number.
+    报告版本号.
 
 
 
-Git LFS is a system for managing and versioning large files in
-association with a Git repository.  Instead of storing the large files
-within the Git repository as blobs, Git LFS stores special "pointer
-files" in the repository, while storing the actual file contents on a
-Git LFS server.  The contents of the large file are downloaded
-automatically when needed, for example when a Git branch containing
-the large file is checked out.
-
-Git LFS works by using a "smudge" filter to look up the large file
-contents based on the pointer file, and a "clean" filter to create a
-new version of the pointer file when the large file's contents change.
-It also uses a pre-push hook to upload the large file contents to
-the Git LFS server whenever a commit containing a new large file
-version is about to be pushed to the corresponding Git server.
+Git LFS是一个与Git存储库相关联的大型文件管理和版本控制系统。Git LFS不将大型文件存储为blobs，而是在存储库中存储特殊的“指针文件”，同时将实际的文件内容存储在Git LFS服务器上。当需要时，会自动下载大文件的内容，例如签出包含大文件的Git分支时。
+Git LFS使用“smudge”过滤器根据指针文件查找大文件的内容，使用“clean”过滤器在大文件的内容发生更改时创建指针文件的新版本。它还使用预推钩子将包含新大文件版本的提交上传到相应的Git服务器时，将大文件内容上传到Git LFS服务器。
 
