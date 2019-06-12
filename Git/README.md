@@ -34,8 +34,8 @@ $ sudo apt-get install git
 3.  然后在命令行里配置你的用户名和email地址。
 
 ```
-$ git config --global "youname"
-$ git config --global "youemail" 
+$ git config --global user.name "youname"
+$ git config --global user.email "youemail" 
 ```
 
 ### 二、创建仓库
